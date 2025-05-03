@@ -11,9 +11,12 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 @JsonTest
 class CashCardJsonTest {
-
-    @Autowired
     private JacksonTester<CashCard> json;
+    
+    @Autowired
+    public CashCardJsonTest(JacksonTester<CashCard> json) {
+        this.json = json;
+    }
 
     @Test
     void cashCardSerializationTest() throws IOException {
