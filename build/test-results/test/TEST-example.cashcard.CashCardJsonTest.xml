@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="example.cashcard.CashCardJsonTest" tests="2" skipped="0" failures="1" errors="0" timestamp="2025-05-03T20:44:57.758Z" hostname="maia" time="0.33">
+  <properties/>
+  <testcase name="cashCardSerializationTest()" classname="example.cashcard.CashCardJsonTest" time="0.243"/>
+  <testcase name="cashCardDeserializationTest()" classname="example.cashcard.CashCardJsonTest" time="0.083">
+    <failure message="org.opentest4j.AssertionFailedError: &#10;expected: CashCard[id=1000, amount=67.89]&#10; but was: CashCard[id=99, amount=123.45]" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: 
+expected: CashCard[id=1000, amount=67.89]
+ but was: CashCard[id=99, amount=123.45]
+	at app//example.cashcard.CashCardJsonTest.cashCardDeserializationTest(CashCardJsonTest.java:44)
+	at java.base@17.0.14/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base@17.0.14/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base@17.0.14/java.util.ArrayList.forEach(ArrayList.java:1511)
+</failure>
+  </testcase>
+  <system-out><![CDATA[2025-05-03T17:44:57.460-03:00  INFO 58209 --- [CashCard] [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [example.cashcard.CashCardJsonTest]: CashCardJsonTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-05-03T17:44:57.498-03:00  INFO 58209 --- [CashCard] [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration example.cashcard.CashCardApplication for test class example.cashcard.CashCardJsonTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.5)
+
+2025-05-03T17:44:57.566-03:00  INFO 58209 --- [CashCard] [    Test worker] example.cashcard.CashCardJsonTest        : Starting CashCardJsonTest using Java 17.0.14 with PID 58209 (started by maia in /home/maia/Projetos/ProjetoAPICashCard)
+2025-05-03T17:44:57.568-03:00  INFO 58209 --- [CashCard] [    Test worker] example.cashcard.CashCardJsonTest        : No active profile set, falling back to 1 default profile: "default"
+2025-05-03T17:44:57.740-03:00  INFO 58209 --- [CashCard] [    Test worker] example.cashcard.CashCardJsonTest        : Started CashCardJsonTest in 0.236 seconds (process running for 5.434)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
